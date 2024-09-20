@@ -1,0 +1,59 @@
+/* css for main page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #EDEDED;
+    color: #3D3D3D;
+    padding: 20px;
+    margin: 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    font-size: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+header {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mainContent {
+    background-color: #D1D1D1;
+    border: 5px solid #919191;
+    border-radius: 10px;
+    min-height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* navbar */
+.navBar {
+    background-color: #D1D1D1;
+    border-radius: 10px;
+    border: 5px solid #919191;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navItem {
+    background-color: #BEBEBE;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
