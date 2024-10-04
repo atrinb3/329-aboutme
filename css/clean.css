@@ -5,23 +5,32 @@ body {
     background-color:  #EDEDED;
     color: #3D3D3D;
     padding: 20px;
-    margin: 0;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
-h1 {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    font-size: 60px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+footer {
+    background-color: #5A3D5C;
+    border-radius: 10px;
+    border: 5px solid #382039;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-inline: 20px;
+    color: #EDEDED;
 }
 
-header {
-    margin: auto;
-    margin-top: 20px;
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    padding: 20px;
+    padding-top: 140px;
+    background-image: url('banner.png');
+    background-position: center;
+    border: 5px solid #919191;
+    border-radius: 10px;
+    color: #EDEDED;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
@@ -30,23 +39,25 @@ header {
     border: 5px solid #919191;
     border-radius: 10px;
     min-height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* navbar */
+/* Navbar (using flexbox) */
 .navBar {
-    background-color: #D1D1D1;
+    background-color: #5A3D5C;
     border-radius: 10px;
-    border: 5px solid #919191;
+    border: 5px solid #382039;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .navItem {
-    background-color: #BEBEBE;
+    background-color: #4b334d;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
@@ -54,6 +65,90 @@ header {
     flex-basis: 20%;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #EDEDED;
     font-weight: bolder;
+}
+
+/* Content w/ grid. Old, probably replace soon. */
+.vertical-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+}
+
+.item {
+    background-color: #EDEDED;
+    padding: 10px;
+    padding-inline-start: 10px;
+    border-radius: 10px;
+    column-gap: 10px;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+} 
+
+.item-picture {
+    grid-column-start: 1;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+}
+
+.item-content {
+    grid-column-start: 2;
+}
+
+/* Newer somewhat decent CSS */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.read-more-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+}
+
+.read-more-btn {
+    background-color: #4b334d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.read-more-btn:hover {
+    background-color: #3a283b;
 }

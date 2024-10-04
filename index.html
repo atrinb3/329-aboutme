@@ -1,15 +1,16 @@
-<!--Added some extra CSS from another project of mine just to pretty things up-->
+<!--Andrew Tringali COMM329 F24-->
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/clean.css">
 <html>
     <head>
-        <title>About Me</title>
+        <title>Andrew Tringali</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/clean.css">
     </head>
     <body>
         <header>
             <h1>Andrew Tringali</h1>
-            <nav>
+        </header>
+        <nav>
             <div class="navBar">
                 <a class="navItem" href="index.html">Home</a>
                 <a class="navItem" href="about.html">About</a>
@@ -18,17 +19,74 @@
                 <a class="navItem" href="resume.html">Resume</a>
             </div>
         </nav>
-        </header>
         <div class="mainContent">
-            <h2>Placeholder</h2>
-            <h3>Title goes here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="vertical-container">
+                <div class="item">
+                    <img src="images/img1.png" class="item-picture" alt="desktop"
+                    width="200"
+                    height="225"/>	
+                    <div class="item-content">
+                        <h2>Hi. I'm Andrew.</h2>
+                        <p>I’m Andrew Tringali, a fifth-year computer science student from Clinton, Massachusetts.</p>
+                        <p>This is the biography section. I will add more soon.</p>
+                        <div class="read-more-container">
+                            <a href="about.html">
+                                <button class="read-more-btn">More about me</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemc">
+                    <div class="grid-container">
+                        <div class="card">
+                            <h2>"Andrew Tringali? No, I have no idea who that could be, sorry."</h2>
+                            <p>-Some random person on campus</p>
+                        </div>
+                        <div class="card">
+                            <h2>"Isn't that the guy who's car exploded outside RoBro?"</h2>
+                            <p>-Yeah</p>
+                        </div>
+                        <div class="card">
+                            <h2>"I don't feel like making any more fake quotes, sorry about that."</h2>
+                            <p>-Me</p>
+                        </div>
+                    </div>
+                    <div class="read-more-container">
+                        <a href="resume.html">
+                            <button class="read-more-btn">More references</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemc">
+                    <h2>My Projects</h2>
+                    <p>Hardware, software, and everything in between.</p>
+                    <div class="grid-container">
+                        <div class="card">
+                            <img src="images/img2.png" alt="Placeholder Image">
+                            <h2>Project 1</h2>
+                            <p>This is a short description for project 1.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/img2.png" alt="Placeholder Image">
+                            <h2>Project 2</h2>
+                            <p>This is a short description for project 2.</p>
+                        </div>
+                        <div class="card">
+                            <img src="images/img2.png" alt="Placeholder Image">
+                            <h2>Project 3</h2>
+                            <p>This is a short description for project 3.</p>
+                        </div>
+                    </div>
+                    <div class="read-more-container">
+                        <a href="projects.html">
+                            <button class="read-more-btn">More projects</button>
+                        </a>
+                    </div>
+                </div>
         </div>
-        <footer style="position: fixed; bottom: 0; width: 100%; text-align: left;">
-            <p>Andrew Tringali 2024</p>
+        </div>
+        <footer>
+            <p>© Andrew Tringali 2024</p>
         </footer>
-    </div>
     </body>
 </html>
