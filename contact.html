@@ -1,4 +1,29 @@
 <!--Added some extra CSS from another project of mine just to pretty things up-->
+<style>
+    input, label {
+        display: block;
+    }
+
+    label {
+        font-size: larger;
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+    }
+
+    input {
+        min-height: 32px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        min-width: 50%;
+    }
+
+    button {
+        min-width: 25%;
+        min-height: 32px;
+        font-size: larger;
+    }
+</style>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,11 +56,28 @@
         </nav>
         </header>
         <div class="mainContent">
-            <h2>Placeholder</h2>
-            <h3>Title goes here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Contact Me</h2>
+            <form action="mailto:VerifiablyFakeEmail@notarealwebsite.fakeextensgdin" method="post">
+                <p>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="fname" name="user_fname" maxlength="60" required>
+                </p>
+                <p>
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="lname" name="user_lname" maxlength="60" required>
+                </p>
+                <p>
+                    <label for="mail">Email Address:</label>
+                    <input type="email" id="mail" name="user_email" maxlength="60" required>
+                </p>
+                <p>
+                    <label for="phone">Ask a Question:</label>
+                    <input type="text" id="msg" name="user_msg" maxlength="256" required>
+                </p>
+                <p class="button">
+                    <button type="submit">Submit</button>
+                </p>                  
+              </form>   
         </div>
     </div>
     <footer>
